@@ -1,0 +1,6 @@
+.style-chooser .vs__search::placeholder,
+.style-chooser .vs__dropdown-toggle {
+  min-height:35px;
+  min-width: 150px;
+  border-radius: 10px;
+}

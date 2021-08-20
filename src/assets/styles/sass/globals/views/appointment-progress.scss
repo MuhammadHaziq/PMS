@@ -1,0 +1,260 @@
+.progress-header {
+	position: relative;
+}
+.progress {
+	height: 1rem !important;
+	border-radius: 0;
+	.progress-bar {
+		background-color: #62b146;
+	}
+}
+.progress-bar.active {
+	-webkit-animation: progress-bar-stripes 2s linear infinite;
+	-o-animation: progress-bar-stripes 2s linear infinite;
+	animation: progress-bar-stripes 2s linear infinite;
+}
+.progress.active {
+	.progress-bar {
+		-webkit-animation: progress-bar-stripes 2s linear infinite;
+		-o-animation: progress-bar-stripes 2s linear infinite;
+		animation: progress-bar-stripes 2s linear infinite;
+	}
+}
+.step { 
+	.custom-label {
+		text-align: center;
+		font-size: 28px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	.form-control,
+	 .custom-select {
+		border: 2px solid #ccc;
+		border-radius: 0;
+		font-size: 16px;
+		height: auto;
+		padding: 10px;
+		&:focus {
+			border-color: #62b146;
+			box-shadow: none;
+		}
+	}
+	.btn-action {
+		margin-top: 20px;
+		.btn {
+			padding: 10px;
+			font-size: 20px;
+			background-color: #62b146;
+			border-color: #62b146;
+			&:focus,&:active {
+				background-color: #8ad66f !important;
+				border-color: #8ad66f !important;
+			}
+		}
+	}
+	.text-primary {
+		color: #62b146 !important;
+	}
+	.map {
+		width: 100%;
+		height: 400px;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.appointment-calender {
+		max-width: 1140px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.card-body {
+			padding: 0;
+		}
+		.vc-container {
+			border: 0;
+			max-width: 378px;
+			width: 100%;
+			height: 378px;
+			.vc-w-full {
+				height: 100%;
+				margin: 0;
+				width: 100%;
+			}
+			.vc-grid-container {
+				height: 100%;
+				margin: 0;
+				width: 100%;
+			}
+			.vc-pane {
+				height: 100%;
+				margin: 0;
+				width: 100%;
+			}
+			.vc-day-content {
+				&:not(.is-disabled) {
+					background-color: #f2f7fc;
+					color: #00c5b4;
+					height: 40px;
+					width: 40px;
+				}
+				&:focus {
+					background-color: #00c5b4;
+					color: #fff;
+				}
+				height: 46px;
+				width: 46px;
+			}
+			.vc-day-content.is-disabled {
+				pointer-events: none;
+				cursor: not-allowed;
+			}
+			.vc-highlights {
+				+ {
+					.vc-day-content {
+						background-color: #00c5b4;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.calender-info {
+		border-right: 1px solid #ddd;
+		height: 100%;
+	}
+	.calender-right {
+		padding: 20px 0;
+		h5 {
+			font-weight: bold;
+			font-size: 20px;
+		}
+	}
+	.calender-wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	.time-slots {
+		padding: 0 20px 0 0;
+		margin: 0;
+		width: 35%;
+		overflow: hidden;
+		h6 {
+			font-size: 16px;
+			padding-bottom: 5px;
+			margin-top: 15px;
+		}
+		li {
+			list-style: none;
+			display: flex;
+			margin-top: 15px;
+			justify-content: space-between;
+			button {
+				-webkit-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+				width: 100%;
+				flex: 0 0 100%;
+				display: block;
+				+ {
+					button {
+						opacity: 0;
+						visibility: hidden;
+						position: relative;
+						margin-left: 3%;
+						-moz-transform: translateX(40px);
+						-webkit-transform: translateX(40px);
+						transform: translateX(40px);
+					}
+				}
+			}
+		}
+		li.active {
+			button {
+				width: 49%;
+				flex: 0 0 49%;
+				+ {
+					button {
+						opacity: 1;
+						visibility: visible;
+						transform: translateX(0px);
+						margin: 0;
+					}
+				}
+			}
+			button.btn-outline-primary {
+				background-color: #4d5055;
+				border-color: #f2f7fc !important;
+				color: #fff;
+				&:focus {
+					background-color: #4d5055;
+					border-color: #f2f7fc !important;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.calender-meeting-info {
+		padding: 20px;
+		ul {
+			margin: 0;
+			padding: 0;
+			margin: 0;
+			padding: 0;
+			li {
+				list-style: none;
+				padding-left: 27px;
+				margin-bottom: 10px;
+				font-size: 14px;
+				font-weight: bold;
+				color: #949699;
+				list-style: none;
+				padding-left: 27px;
+				margin-bottom: 10px;
+				font-size: 14px;
+				font-weight: bold;
+				color: #949699;
+				text-align: left;
+				i {
+					position: absolute;
+					left: 0;
+					font-size: 18px;
+					position: absolute;
+					left: 36px;
+					font-size: 18px;
+				}
+			}
+		}
+		h5 {
+			font-size: 18px;
+			color: #949699;
+			font-weight: bold;
+		}
+		h3 {
+			font-size: 28px;
+			font-weight: 900;
+			margin-bottom: 15px;
+			color: #4d5055;
+		}
+	}	
+}
+.btn-back,
+.btn-cancel {
+	position: absolute;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	i {
+		font-size: 26px;
+		&.fa-times {
+			font-size: 20px;
+		}
+	}
+}
+.btn-back {
+	left: 0;
+}
+.btn-cancel {
+	right: 0;
+}
