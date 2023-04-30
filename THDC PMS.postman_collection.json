@@ -1,0 +1,1863 @@
+{
+	"info": {
+		"_postman_id": "1fefb9f2-f3c6-45d1-be86-a1bb2d970e8c",
+		"name": "THDC PMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "practice",
+			"item": [
+				{
+					"name": "create new practice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ahmadeco\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thdc-pms-backend.herokuapp.com/api/practice/",
+							"protocol": "https",
+							"host": [
+								"thdc-pms-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"practice",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of all practices",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI5MzkxMDAwLCJqdGkiOiI5ZDFkYmViMmQ5ZmI0N2NmODA0NDNiNGI2ODBmNTM4MyIsInVzZXJfaWQiOjF9.REzECqAQPinswdutLIRUvE1Am4_xRun751nkE_weTiE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/practice/?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"practice",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get practice by pk",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI5MzkxMDAwLCJqdGkiOiI5ZDFkYmViMmQ5ZmI0N2NmODA0NDNiNGI2ODBmNTM4MyIsInVzZXJfaWQiOjF9.REzECqAQPinswdutLIRUvE1Am4_xRun751nkE_weTiE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/practice/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"practice",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create practice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"practice_name\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thdc-pms-backend.herokuapp.com/api/practice/",
+							"protocol": "https",
+							"host": [
+								"thdc-pms-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"practice",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of practices created against logged in user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/practice/?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"practice",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search practice against logged in user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/practice/?search=ahmad&page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"practice",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "ahmad"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of practices created against logged in user (2)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/practice/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"practice",
+								""
+							],
+							"query": [
+								{
+									"key": "location_name",
+									"value": "ahmad",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search practice against logged in user (2)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/practice/?location_name=ahmad",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"practice",
+								""
+							],
+							"query": [
+								{
+									"key": "location_name",
+									"value": "ahmad"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invite user to practice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"practice_id\":1,\r\n    \"email\":\"muhammadahmad@ecologix.us\",\r\n    \"user_type\":\"BUSINESS_OWNER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/practice/1/invite/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"practice",
+								"1",
+								"invite",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "office",
+			"item": [
+				{
+					"name": "operatory",
+					"item": [
+						{
+							"name": "create office operatory",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"eco_operatory\",\r\n    \"notes\":\"eco_notes\",\r\n    \"status\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/operatory/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"operatory",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update office operatory api",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"haziq_operatory\",\r\n    \"notes\":\"haziq_notes\",\r\n    \"status\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/3/operatory/2/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"3",
+										"operatory",
+										"2",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update office operatory api (2)",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"haziq_operatory\",\r\n    \"notes\":\"haziq_notes\",\r\n    \"status\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/3/operatory/update-office-operatory/2/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"3",
+										"operatory",
+										"update-office-operatory",
+										"2",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get list of office operatory by office id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/3/operatory/?page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"3",
+										"operatory",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete office operatory by office id and operatory id api",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/3/operatory/3/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"3",
+										"operatory",
+										"3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete office operatory by office id and operatory id api (2)",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/operatory/delete-office-operatory/5/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"operatory",
+										"delete-office-operatory",
+										"5",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create office operatory (2)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"eco_operatory\",\r\n    \"notes\":\"eco_notes\",\r\n    \"status\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/operatory/create-office-operatory/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"operatory",
+										"create-office-operatory",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "invite user to office",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"office_id\":1,\r\n    \"email\":\"muhammadahmad@ecologix.us\",\r\n    \"user_type\":\"BUSINESS_OWNER\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{LIVE_THDC}}/api/office/6/invite/",
+									"host": [
+										"{{LIVE_THDC}}"
+									],
+									"path": [
+										"api",
+										"office",
+										"6",
+										"invite",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create office user by office id and user id api",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_type\":\"SCHEDULER\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{LIVE_THDC}}/api/office/1/users/2/create/",
+									"host": [
+										"{{LIVE_THDC}}"
+									],
+									"path": [
+										"api",
+										"office",
+										"1",
+										"users",
+										"2",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get list of office users by office id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/users/?page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"users",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update office user by office id and user id api",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_type\":\"OFFICE_MANAGER\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/users/2/update/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"users",
+										"2",
+										"update",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete office user by office id and user id api",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/users/3/delete/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"users",
+										"3",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search office user by office id api",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/users/search_user/?user_name_email=AHMAD",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"users",
+										"search_user",
+										""
+									],
+									"query": [
+										{
+											"key": "user_name_email",
+											"value": "AHMAD"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "provider",
+					"item": [
+						{
+							"name": "create provider user by office id and user id api",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_type\":\"PROVIDER\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/users/2/create/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"users",
+										"2",
+										"create",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get list of all providers against available operatory id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/operatory/availability/2/providers/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"operatory",
+										"availability",
+										"2",
+										"providers",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get list of office providers by office id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/1/users/office-providers/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"1",
+										"users",
+										"office-providers",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search office provider by office id and operatory id api",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/office/3/operatory/2/provider/search/?query",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"office",
+										"3",
+										"operatory",
+										"2",
+										"provider",
+										"search",
+										""
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "operatory_availability",
+					"item": [
+						{
+							"name": "create office operatory availability by operatory id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"day_of_week\": 0,\r\n    \"start_time\": \"14:14:14\",\r\n    \"end_time\": \"15:14:14\",\r\n    \"notes\": \"haziq is an ____\",\r\n    \"operatory\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/operatory/4/availability/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"operatory",
+										"4",
+										"availability",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add provider to the office availability by available operatory id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDU3ODA4LCJqdGkiOiJjN2EzNGMwMThhYjU0NGM4YjBiYTI4ZmYxODBjOWQzNSIsInVzZXJfaWQiOjJ9.ed4t87fYO-GOIAwsdZ443qkBKT2AuWJih9c0dBEYxw8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/operatory/availability/2/providers/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"operatory",
+										"availability",
+										"2",
+										"providers",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "create new office in a practice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI5MzkxMDAwLCJqdGkiOiI5ZDFkYmViMmQ5ZmI0N2NmODA0NDNiNGI2ODBmNTM4MyIsInVzZXJfaWQiOjF9.REzECqAQPinswdutLIRUvE1Am4_xRun751nkE_weTiE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"practice\":1,\r\n    \"location_name\":\"ecologix\",\r\n    \"phone_number\":\"0333333333\",\r\n    \"company\":\"\",\r\n    \"abbreviation\":\"\",\r\n    \"email\":\"ahmad@ecologix.us\",\r\n    \"website\":\"\",\r\n    \"facility_id\":\"\",\r\n    \"trans_user_id\":\"\",\r\n    \"address\":\"Gulberg III\",\r\n    \"address_2\":\"\",\r\n    \"city\":\"Lahore\",\r\n    \"state\":\"UT\",\r\n    \"country\":\"Pakistan\",\r\n    \"zipcode\":\"54660\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/office/with-address/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"office",
+								"with-address",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete office from a practice by pk",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI5NDQwMzMzLCJqdGkiOiI3YWIyYWUyNzhjOTM0YjYyYjVmZGQyYjI5ZmY4ZjUxZCIsInVzZXJfaWQiOjF9.cAycGVBWXUGgyD7li1gJ8NSBHIAnIbw-Z3BNippFcKo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/office/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"office",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update office with address by practice id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI5NDY3NDUxLCJqdGkiOiJkNTBmNjcwODc4M2M0ZjRmODgwYTcxNTJjOTVhZTk1MCIsInVzZXJfaWQiOjJ9.knFY9DxRcfSLZg1tjQGOYjlJ1w9QCMivtoKF2heX9DI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"practice\":1,\r\n    \"location_name\":\"ecologix\",\r\n    \"phone_number\":\"03331234567\",\r\n    \"email\":\"ahmad@ecologix.us\",\r\n    \"address\":\"Gulberg III\",\r\n    \"city\":\"Lahore\",\r\n    \"state\":\"UT\",\r\n    \"country\":\"Pakistan\",\r\n    \"zipcode\":\"54660\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/office/update-office-with-address/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"office",
+								"update-office-with-address",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get office detail by pk api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxMTM3NTYzLCJqdGkiOiIzNjY4NjhmMWEzYTI0MzUwYjQzODAxNzY0ZDJhNTkyMyIsInVzZXJfaWQiOjF9.5vCbbhFkqsbKOy4686J3pVvzVQzh9claSoQiT3ebAkY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/office/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"office",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of all offices",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{LIVE_THDC}}/api/office/?page=1&limit=20",
+							"host": [
+								"{{LIVE_THDC}}"
+							],
+							"path": [
+								"api",
+								"office",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search office in list of offices by location name ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/office/?page=1&limit=20&location_name=eco",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"office",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "location_name",
+									"value": "eco"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "person",
+			"item": [
+				{
+					"name": "login api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"muhammadahmad@ecologix.us\",\r\n    \"password\": \"Ecologix@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register employee api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"zeeshan\",\r\n    \"last_name\": \"asif\",\r\n    \"email\": \"zeeshan.asif@gmail.com\",\r\n    \"password1\": \"zeeshan_asif\",\r\n    \"password2\": \"zeeshan_asif\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "patient",
+			"item": [
+				{
+					"name": "get list of all patients",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patient/?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patient",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create patient against practice id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Muhammad\",\r\n    \"middle_name\": \"as\",\r\n    \"last_name\": \"add\",\r\n    \"email_address\": \"tast2@gmail.com\",\r\n    \"date_of_birth\": \"2021-08-28\",\r\n    \"gender\": \"MALE\",\r\n    \"nick_name\": \"\",\r\n    \"phone\": \"2131231212\",\r\n    \"cell\": \"\",\r\n    \"foreign_id\": \"\",\r\n    \"guardian\": \"\",\r\n    \"ssn\": \"\",\r\n    \"home_office\": \"\",\r\n    \"other_notes\": \"\",\r\n    \"insurance_policy\": \"\",\r\n    \"practice\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patient/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patient",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update patient by pk",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Muhammad\",\r\n    \"middle_name\": \"as\",\r\n    \"last_name\": \"add\",\r\n    \"email_address\": \"tast@gmail.com\",\r\n    \"date_of_birth\": \"2021-08-28\",\r\n    \"gender\": \"MALE\",\r\n    \"nick_name\": \"\",\r\n    \"phone\": \"2131231212\",\r\n    \"cell\": \"\",\r\n    \"foreign_id\": \"\",\r\n    \"guardian\": \"\",\r\n    \"ssn\": \"\",\r\n    \"home_office\": \"\",\r\n    \"other_notes\": \"\",\r\n    \"insurance_policy\": \"\",\r\n    \"practice\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patient/3/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patient",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get patient detail by pk",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patient/3/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patient",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete patient by pk",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patient/4/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patient",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointmnet",
+			"item": [
+				{
+					"name": "schedule appointment api",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2021-09-01\",\r\n    \"time\": \"14:30:59\",\r\n    \"duration\": 59,\r\n    \"appointment_type\":\"ASAP\",\r\n    \"procedure\": [1,2],\r\n    \"notes\": \"haziq is an ____\",\r\n    \"status\": \"SCHEDULED\",\r\n    \"office\":1,\r\n    \"operatory\": 2,\r\n    \"provider\": 1,\r\n    \"patient\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule-appointment/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule-appointment",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "schedule appointment with patient and patient address api",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Muhammad\",\r\n    \"middle_name\": \"as\",\r\n    \"last_name\": \"add\",\r\n    \"email_address\": \"tast2@gmail.com\",\r\n    \"date_of_birth\": \"2021-08-28\",\r\n    \"gender\": \"MALE\",\r\n    \"nick_name\": \"\",\r\n    \"phone\": \"2131231212\",\r\n    \"cell\": \"\",\r\n    \"foreign_id\": \"\",\r\n    \"guardian\": \"\",\r\n    \"ssn\": \"\",\r\n    \"home_office\": \"\",\r\n    \"other_notes\": \"\",\r\n    \"insurance_policy\": \"\",\r\n    \"practice\": 2,\r\n    \"date\": \"2021-09-01\",\r\n    \"time\": \"14:30:59\",\r\n    \"duration\": 59,\r\n    \"appointment_type\":\"ASAP\",\r\n    \"procedure\": [1,2],\r\n    \"notes\": \"haziq is an ____\",\r\n    \"status\": \"SCHEDULED\",\r\n    \"office\":1,\r\n    \"operatory\": 2,\r\n    \"provider\": 1,\r\n    \"address\":\"Gulberg III\",\r\n    \"address_2\":\"\",\r\n    \"city\":\"Lahore\",\r\n    \"state\":\"UT\",\r\n    \"country\":\"Pakistan\",\r\n    \"zipcode\":\"54660\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule-appointment/create-appointment/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule-appointment",
+								"create-appointment",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Appointments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{LIVE_THDC}}/api/practice/2/appointments/?page=1&limit=20",
+							"host": [
+								"{{LIVE_THDC}}"
+							],
+							"path": [
+								"api",
+								"practice",
+								"2",
+								"appointments",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "provider",
+			"item": [
+				{
+					"name": "create provider against practice id api",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"md\",\r\n    \"last_name\":\"hq\",\r\n    \"email_address\":\"md_hq@eco.com\",\r\n    \"phone\":\"03217654321\",\r\n    \"practice\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/provider/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"provider",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of all providers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/provider/?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"provider",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "procedure",
+			"item": [
+				{
+					"name": "get list of all procedures",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYxNDUzOTM0LCJqdGkiOiI3MjI2YmVlYmM0NDg0NjgzOTdlMGVkMjBiZGMzODEwNCIsInVzZXJfaWQiOjJ9.82FdF-zm6cpPeKDwvtKwa-iDi1OgWxiKrGPi5rMg_44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/procedure/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"procedure",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
